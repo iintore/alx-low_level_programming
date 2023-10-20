@@ -33,4 +33,5 @@ size_t print_list(const list_t *h)
 	/*print for the last node*/
 	printf("[%d] %s\n", h->len, h->str);
 
-	return (node_count);}
+	return (node_count);
+}

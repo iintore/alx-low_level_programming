@@ -1,11 +1,11 @@
 #include "main.h"
 
-void positive_or_negative(int 1)
-{
-	if (i > 0)
-		printf("%d is positive\n", i);
-	else if (1 < 0)
-		printf("%d is negative\n", i);
-	else
-		printf("%d is zero\n", i)
+void positive_or_negative(int num) {
+    if (num > 0) {
+        printf("%d is positive.\n", num);
+    } else if (num < 0) {
+        printf("%d is negative.\n", num);
+    } else {
+        printf("%d is zero.\n", num);
+    }
 }

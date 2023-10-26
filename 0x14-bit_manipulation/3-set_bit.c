@@ -3,6 +3,13 @@
 #define CHAR_BITS 8 /*size of char*/
 #define INT_BITS (sizeof(unsigned long int) * CHAR_BITS)
 
+/**
+ * print_bin - prints binary rep of @n
+ *
+ * @number: decimal value
+ *
+ * Return: nothing
+*/
 void print_bin(unsigned long int number)
 {
 	if (number >> 1)
@@ -10,6 +17,15 @@ void print_bin(unsigned long int number)
 
 	putc((number & 1) ? '1' : '0', stdout);
 }
+/**
+ * set_bit - sets the value of a bit to 1 at a given
+ *           index.
+ *
+ * @n: number
+ * @index: index to set the value of bit to 1
+ *
+ * Return: 1 if it worked OR -1 if it failed
+*/
 
 int set_bit(unsigned long int *n, unsigned int index)
 {

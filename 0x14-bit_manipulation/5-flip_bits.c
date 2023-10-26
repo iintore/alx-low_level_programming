@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_bin - prints binary rep of @n
  *
@@ -13,6 +14,7 @@ void print_bin(unsigned long int number)
 
 	putc((number & 1) ? '1' : '0', stdout);
 }
+
 /**
  * flip_bits - a function that returns the number of bits you
  *             would need to flip to get from one number to
@@ -41,7 +43,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	printf("\n");
 	#endif
 
-
+	/*keep shifting diff to right*/
 	do {
 		#ifdef DEBUG
 		printf("diff %ld before right shift ", diff);

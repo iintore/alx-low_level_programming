@@ -17,7 +17,16 @@ void print_bin(unsigned long int number)
 
 	putc((number & 1) ? '1' : '0', stdout);
 }
-
+/**
+ * get_bit - gets a bit at a given index
+ *
+ * @n: decimal value
+ * @index: integer value of bit position
+ *        to get from @n
+ *
+ * Return: the value of the bit or -1 if an
+ *          error occured
+*/
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int bit;
